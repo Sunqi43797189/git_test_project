@@ -36,7 +36,7 @@ func main() {
 	//reverseTest()
 	//sliceNil()
 	//makeSlice()
-	appendTest()
+	sliceMemoryTest()
 }
 
 func simpleTest() {

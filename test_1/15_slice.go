@@ -92,4 +92,43 @@ func appendTest() {
 	}
 	fmt.Printf("%q\n", runes)
 	fmt.Println([]rune("hello, 世界"))
+
+	var x []int
+	x = append(x, 1)
+	x = append(x, 2, 3)
+	x = append(x, 4,5,6)
+	x = append(x, x...)
+	fmt.Println(x)
 }
+
+func sliceMemory(strings []string) []string {
+	// 原地修改slice内容，返回切片到i的slice
+	i := 0
+	for _, s := range strings {
+		if s != "" {
+			strings[i] = s
+			i++
+		}
+	}
+	return strings[:i]
+}
+
+func sliceMemoryTest() {
+	// 原数据被覆盖
+	data := []string{"onr", "", "three"}
+	fmt.Println(sliceMemory(data))
+	fmt.Println(data)
+}
+
+func removeV1(slice []int, i int) []int {
+	//删除i位置的元素， 保持slice顺序
+	copy(slice[i:], slice[i+1:])
+	return slice[:len(slice) - 1]
+}
+
+func removeV2(slice []int, i int) []int {
+	// 删除i位置的元素，不保留顺序
+	slice[i] = slice[len(slice) - 1]
+	return slice[:len(slice) - 1]
+}
+
