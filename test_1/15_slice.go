@@ -44,7 +44,7 @@ func reverseTest() {
 	//fmt.Println(a)
 }
 
-func equal(x, y []string) bool {
+func equalSlice(x, y []string) bool {
 	if len(x) != len(y) {
 		return false
 	}

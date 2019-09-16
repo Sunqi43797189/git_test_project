@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"strconv"
 )
+
 func main() {
 	//constTest()
 	//iotaTest()
@@ -36,7 +37,8 @@ func main() {
 	//reverseTest()
 	//sliceNil()
 	//makeSlice()
-	sliceMemoryTest()
+	//sliceMemoryTest()
+	makeMap()
 }
 
 func simpleTest() {
@@ -50,10 +52,8 @@ func simpleTest() {
 func simpleInt() {
 	var f float64 = 212
 	fmt.Println(f)
-	fmt.Println((f-32) * 5 /9)
-	fmt.Println(5 / 9 * (f-32))
-	fmt.Println(5.0 / 9 * (f-32))
+	fmt.Println((f - 32) * 5 / 9)
+	fmt.Println(5 / 9 * (f - 32))
+	fmt.Println(5.0 / 9 * (f - 32))
 	fmt.Printf("%T", f)
 }
-
-
