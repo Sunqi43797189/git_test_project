@@ -4,10 +4,9 @@ import (
 	"fmt"
 )
 
-func sliceTest()  {
+func sliceTest() {
 	months := [...]string{1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December"}
 	fmt.Println(months[0])
-
 
 	fmt.Println(cap(months))
 	fmt.Println(len(months))
@@ -26,15 +25,15 @@ func sliceTest()  {
 	}
 }
 
-func reverse(s []int)  {
-	for i, j := 0, len(s) - 1; i < j; i, j = j+1, j-1 {
+func reverse(s []int) {
+	for i, j := 0, len(s)-1; i < j; i, j = j+1, j-1 {
 		s[i], s[j] = s[j], s[i]
 	}
 }
 
-func reverseTest()  {
-	a := [...]int{0,1,2,3,4,5}
-	s := []int{0,1,2,3,4,5}
+func reverseTest() {
+	a := [...]int{0, 1, 2, 3, 4, 5}
+	s := []int{0, 1, 2, 3, 4, 5}
 
 	fmt.Printf("%T\t%T", a, s)
 	//reverse(a[:2])
@@ -87,7 +86,7 @@ func makeSlice() {
 
 func appendTest() {
 	var runes []rune
-	for _, r := range  "hello, 世界" {
+	for _, r := range "hello, 世界" {
 		runes = append(runes, r)
 	}
 	fmt.Printf("%q\n", runes)
@@ -96,7 +95,7 @@ func appendTest() {
 	var x []int
 	x = append(x, 1)
 	x = append(x, 2, 3)
-	x = append(x, 4,5,6)
+	x = append(x, 4, 5, 6)
 	x = append(x, x...)
 	fmt.Println(x)
 }
@@ -123,12 +122,11 @@ func sliceMemoryTest() {
 func removeV1(slice []int, i int) []int {
 	//删除i位置的元素， 保持slice顺序
 	copy(slice[i:], slice[i+1:])
-	return slice[:len(slice) - 1]
+	return slice[:len(slice)-1]
 }
 
 func removeV2(slice []int, i int) []int {
 	// 删除i位置的元素，不保留顺序
-	slice[i] = slice[len(slice) - 1]
-	return slice[:len(slice) - 1]
+	slice[i] = slice[len(slice)-1]
+	return slice[:len(slice)-1]
 }
-
