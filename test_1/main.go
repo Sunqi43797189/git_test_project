@@ -38,7 +38,11 @@ func main() {
 	//sliceNil()
 	//makeSlice()
 	//sliceMemoryTest()
-	makeMap()
+	//makeMap()
+	//structTest()
+	//jsonTest()
+	//squares()
+	ginTest()
 }
 
 func simpleTest() {

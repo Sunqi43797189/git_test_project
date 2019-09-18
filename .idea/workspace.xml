@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc170e5b-8bee-41f1-8a9e-f072c94b1eed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_1/17_struct.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_1/18_json.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_1/19_err.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_1/20_function.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_1/15_slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/test_1/15_slice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test_1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_1/test_1" beforeDir="false" afterPath="$PROJECT_DIR$/test_1/test_1" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +29,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QUvMbNulyMJ0mGISaaRGCafw60" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
@@ -69,10 +77,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="格式修改" />
+    <MESSAGE value="map类型学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="map类型学习" />
   </component>
 </project>

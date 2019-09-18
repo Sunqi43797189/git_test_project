@@ -81,7 +81,7 @@ func makeSlice() {
 	b := make([]string, 20)[:10] //容量制定为20，但是去前10个分片，剩余容量留给未来增长
 	fmt.Println(b[0])
 
-	fmt.Println(equal(a, b))
+	fmt.Println(equalSlice(a, b))
 }
 
 func appendTest() {
