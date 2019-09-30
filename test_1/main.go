@@ -42,7 +42,17 @@ func main() {
 	//structTest()
 	//jsonTest()
 	//squares()
-	ginTest()
+	//ginTest()
+	//methodTest()
+	//interfaceTest()
+	//clockTest()
+	//channelTest()
+	//chengFaBiao()
+	//channelTestV2()
+	// switchTestV2()
+	// funcRes()
+	// passFuncArgsTest()
+	chainStringTest()
 }
 
 func simpleTest() {
