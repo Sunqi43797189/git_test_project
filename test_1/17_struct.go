@@ -7,6 +7,11 @@ type Address struct {
 	port int
 }
 
+type T struct {
+	a int
+	b int
+}
+
 func structTest() {
 	address1 := Address{hostname: "192.168.1.1", port: 9090}
 	hits := make(map[Address]int)

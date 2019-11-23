@@ -1,0 +1,29 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> main.main.func1 (3 handlers)
+[GIN-debug] GET    /users/:name/*action      --> main.main.func2 (3 handlers)
+[GIN-debug] GET    /users/:name              --> main.main.func3 (3 handlers)
+[GIN-debug] POST   /users                    --> main.main.func4 (3 handlers)
+[GIN-debug] POST   /members                  --> main.main.func5 (3 handlers)
+[GIN-debug] POST   /upload                   --> main.main.func6 (3 handlers)
+[GIN-debug] POST   /multi-upload             --> main.main.func7 (3 handlers)
+[GIN-debug] GET    /v1/login                 --> github.com/gin-gonic/gin.RecoveryWithWriter.func1 (2 handlers)
+[GIN-debug] GET    /v1/logout                --> github.com/gin-gonic/gin.RecoveryWithWriter.func1 (2 handlers)
+[GIN-debug] POST   /v2/register              --> github.com/gin-gonic/gin.RecoveryWithWriter.func1 (2 handlers)
+[GIN-debug] GET    /v2/find                  --> github.com/gin-gonic/gin.RecoveryWithWriter.func1 (2 handlers)
+[GIN-debug] GET    /redirect_outside         --> main.main.func8 (3 handlers)
+[GIN-debug] GET    /redirect_inside          --> main.main.func9 (3 handlers)
+[GIN-debug] GET    /inside_test              --> main.main.func10 (3 handlers)
+[GIN-debug] Listening and serving HTTP on 127.0.0.1:8081
+[GIN] 2019/10/11 - 16:47:05 | 404 |       1.211µs |       127.0.0.1 | GET      /
+[GIN] 2019/10/11 - 16:47:05 | 404 |         730ns |       127.0.0.1 | GET      /favicon.ico
+[GIN] 2019/10/11 - 16:47:13 | 301 |      73.523µs |       127.0.0.1 | GET      /redirect_outside
+[GIN] 2019/10/11 - 16:47:27 | 404 |         722ns |       127.0.0.1 | GET      /
+[GIN] 2019/10/11 - 16:47:35 | 200 |      50.028µs |       127.0.0.1 | GET      /inside_test
+[GIN] 2019/10/11 - 16:47:35 | 200 |     101.523µs |       127.0.0.1 | GET      /redirect_inside
+[GIN] 2019/10/11 - 16:47:35 | 404 |       1.117µs |       127.0.0.1 | GET      /favicon.ico
+[GIN] 2019/10/11 - 17:58:47 | 404 |       1.759µs |       127.0.0.1 | GET      /v1/moments

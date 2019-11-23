@@ -1,0 +1,25 @@
+RunMode: debug
+app:
+  pagesize: 10
+  jwtsecret: 23347$040412
+  runtimerootpath: runtime/
+  imageprefixurl: upload/images
+  imagemaxsize: 5
+  imageallowexts: [.jpg, .jpeg, .png]
+  logsavepath: logs/
+  logsavename: log
+  logfileext: log
+  timeformat: 20060102
+
+server:
+  runmode: debug
+  httpport: 8080
+  readtimeout: 60
+  writetimeout: 60
+database:
+  type: mysql
+  user: root
+  password: root
+  host: 127.0.0.1:13306
+  name: blog
+  tableprefix: blog_
