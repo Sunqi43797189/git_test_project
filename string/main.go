@@ -3,22 +3,22 @@ package main
 import (
 	"fmt"
 	"strconv"
-	"unicode/utf8"
+	// "unicode/utf8"
 )
 
 func main() {
-	s := "hello 你好"
-	fmt.Println(len(s))
-	fmt.Println(utf8.RuneCountInString(s))
+	// s := "hello 你好"
+	// fmt.Println(len(s))
+	// fmt.Println(utf8.RuneCountInString(s))
 
-	// for _, value := range(s) {
-	// 	fmt.Println(string(value))
-	// }
+	// // for _, value := range(s) {
+	// // 	fmt.Println(string(value))
+	// // }
 
-	// for i := 0; i < len(s); i++ {
-	// 	fmt.Println(string(s[i]))
-	// }
-	stringToInt()
+	// // for i := 0; i < len(s); i++ {
+	// // 	fmt.Println(string(s[i]))
+	// // }
+	// stringToInt()
 }
 
 func stringToInt() {
