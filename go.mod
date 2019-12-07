@@ -1,4 +1,4 @@
-module go_test_project
+module go_project
 
 go 1.12
 
